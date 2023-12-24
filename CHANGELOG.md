@@ -1,3 +1,15 @@
+## [1.0.2](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.0.1...1.0.2) (2023-12-24)
+
+
+### Performance improvements
+
+* compile code within dockerfile ([a628cf5](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/a628cf5650d2ca40afa73153e370807ab4c8d842))
+
+
+### Build and continuous integration
+
+* use new action for delivery in order to be able to pass secrets to dockerfile ([935f17d](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/935f17d08ac7613e39d31c3a676a2c824ec48a4d))
+
 ## [1.0.1](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.0.0...1.0.1) (2023-12-24)
 
 
