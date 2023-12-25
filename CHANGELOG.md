@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.0.2...1.0.3) (2023-12-25)
+
+
+### Dependency updates
+
+* **core-deps:** update wldt wodt adapter dependency ([38682c4](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/38682c401770c6bb7dd5852ebda6425948ab345d))
+
 ## [1.0.2](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.0.1...1.0.2) (2023-12-24)
 
 
