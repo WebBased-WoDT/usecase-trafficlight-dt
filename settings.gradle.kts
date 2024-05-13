@@ -16,7 +16,7 @@
 
 plugins {
     id("org.danilopianini.gradle-pre-commit-git-hooks") version "2.0.5"
-    id("com.gradle.enterprise") version "3.17.2"
+    id("com.gradle.enterprise") version "3.17.3"
 }
 
 rootProject.name = "usecase-trafficlight-dt"
