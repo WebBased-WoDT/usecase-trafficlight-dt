@@ -21,11 +21,15 @@ import io.github.webbasedwodt.adapter.WoDTDigitalAdapterConfiguration;
 import io.github.webbasedwodt.ontology.TrafficLightOntology;
 import io.github.webbasedwodt.physicaladapter.TrafficLightPhysicalAdapter;
 import io.github.webbasedwodt.shadowing.MirrorShadowingFunction;
-import it.wldt.core.engine.WldtEngine;
+import it.wldt.core.engine.DigitalTwin;
+import it.wldt.core.engine.DigitalTwinEngine;
 import it.wldt.exception.EventBusException;
 import it.wldt.exception.ModelException;
 import it.wldt.exception.WldtConfigurationException;
+import it.wldt.exception.WldtDigitalTwinStateException;
+import it.wldt.exception.WldtEngineException;
 import it.wldt.exception.WldtRuntimeException;
+import it.wldt.exception.WldtWorkerException;
 
 import java.util.Objects;
 import java.util.Set;
@@ -54,10 +58,11 @@ public final class Launcher {
      */
     public static void main(final String[] args) {
         try {
+            final String trafficLightDTId = "traffic-light-dt";
             final int portNumber = Integer.parseInt(System.getenv(EXPOSED_PORT_VARIABLE));
-            final WldtEngine digitalTwinEngine = new WldtEngine(new MirrorShadowingFunction(), "traffic-light-dt");
-            digitalTwinEngine.addPhysicalAdapter(new TrafficLightPhysicalAdapter());
-            digitalTwinEngine.addDigitalAdapter(new WoDTDigitalAdapter(
+            final DigitalTwin trafficLightDT = new DigitalTwin(trafficLightDTId, new MirrorShadowingFunction());
+            trafficLightDT.addPhysicalAdapter(new TrafficLightPhysicalAdapter());
+            trafficLightDT.addDigitalAdapter(new WoDTDigitalAdapter(
                     "wodt-dt-adapter",
                     new WoDTDigitalAdapterConfiguration(
                             "http://localhost:" + portNumber + "/",
@@ -66,11 +71,17 @@ public final class Launcher {
                             System.getenv(PHYSICAL_ASSET_ID_VARIABLE),
                             Set.of(System.getenv(PLATFORM_URL_VARIABLE)))
             ));
-            digitalTwinEngine.startLifeCycle();
+
+            final DigitalTwinEngine digitalTwinEngine = new DigitalTwinEngine();
+            digitalTwinEngine.addDigitalTwin(trafficLightDT);
+            digitalTwinEngine.startDigitalTwin(trafficLightDTId);
         } catch (ModelException
-                 | EventBusException
+                 | WldtDigitalTwinStateException
+                 | WldtWorkerException
                  | WldtRuntimeException
-                 | WldtConfigurationException e) {
+                 | EventBusException
+                 | WldtConfigurationException
+                 | WldtEngineException e) {
             Logger.getLogger(Launcher.class.getName()).info(e.getMessage());
         }
     }

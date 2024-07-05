@@ -37,6 +37,10 @@ public final class TrafficLightOntology implements DTOntology {
             )
     );
 
+    private static final Map<String, String> ACTION_MAP = Map.of(
+            "switch", "https://lampontology.com/ontology#SwitchCommand"
+    );
+
     @Override
     public String getDigitalTwinType() {
         return "https://smartcityontology.com/ontology#TrafficLight";
@@ -75,5 +79,14 @@ public final class TrafficLightOntology implements DTOntology {
             final String targetUri
     ) {
         return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> obtainActionType(final String rawAction) {
+        if (ACTION_MAP.containsKey(rawAction)) {
+            return Optional.of(ACTION_MAP.get(rawAction));
+        } else {
+            return Optional.empty();
+        }
     }
 }
