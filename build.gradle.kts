@@ -32,7 +32,7 @@ repositories {
     maven {
         url = uri("https://maven.pkg.github.com/WebBased-WoDT/wldt-wodt-adapter")
         credentials {
-            username = project.findProperty("ghPackageUsername")?.toString() ?: ghPackageUsername
+            username = project.findProperty("ghPackagesUsername")?.toString() ?: ghPackageUsername
             password = project.findProperty("ghPackagesPwd")?.toString() ?: ghPackagesPwd
         }
     }
