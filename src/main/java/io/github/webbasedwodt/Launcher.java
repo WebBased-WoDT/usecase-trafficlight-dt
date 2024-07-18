@@ -31,6 +31,7 @@ import it.wldt.exception.WldtEngineException;
 import it.wldt.exception.WldtRuntimeException;
 import it.wldt.exception.WldtWorkerException;
 
+import java.net.URI;
 import java.util.Objects;
 import java.util.Set;
 import java.util.logging.Logger;
@@ -69,7 +70,7 @@ public final class Launcher {
                             new TrafficLightOntology(),
                             portNumber,
                             System.getenv(PHYSICAL_ASSET_ID_VARIABLE),
-                            Set.of(System.getenv(PLATFORM_URL_VARIABLE)))
+                            Set.of(URI.create(System.getenv(PLATFORM_URL_VARIABLE))))
             ));
 
             final DigitalTwinEngine digitalTwinEngine = new DigitalTwinEngine();
