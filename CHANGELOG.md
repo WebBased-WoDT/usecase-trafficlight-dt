@@ -1,3 +1,23 @@
+## [1.1.1](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.1.0...1.1.1) (2024-07-18)
+
+### Dependency updates
+
+* **deps:** migrate to wldt-wodt-adapter 4.0.0 ([7f4a734](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/7f4a734d589cff549be22433f3d46f7ce2495b0e))
+* **deps:** update dependency gradle to v8.9 ([5591fc3](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5591fc3dea00122e580253e70bd877ec6164007e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.87 ([d26cfa9](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/d26cfa93687050aebf0a27143a4a91940cac5c7a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.89 ([5a2a5aa](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5a2a5aae56deec6e86b6957505c141e6a4be02ff))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.90 ([1ea1145](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/1ea114503ede1f91697b0a14828c15354b230f4d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.91 ([0f33b1e](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/0f33b1e68b4d9c873a4d96acea8bd90d023dc808))
+* **deps:** update plugin java-qa to v1.57.1 ([3aad6c5](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/3aad6c5a27d987e293f42e66c995fc4cfcdb6250))
+
+### Bug Fixes
+
+* pass uri instead of string to be compatible with wldt-wodt-adapter 4.0.0 ([99cd9af](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/99cd9af85898555a1fe2c56ff49c91232c67b56e))
+
+### Build and continuous integration
+
+* **deps:** update gradle/wrapper-validation-action action to v3.5.0 ([9a42062](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/9a420623aa646edafa829030c399c3730bebe256))
+
 ## [1.1.0](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.0.3...1.1.0) (2024-07-05)
 
 ### Features
