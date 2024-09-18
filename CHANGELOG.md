@@ -1,3 +1,35 @@
+## [1.1.2](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.1.1...1.1.2) (2024-09-18)
+
+### Dependency updates
+
+* **core-deps:** update to wldt-wodt-adapter 4.1.0 ([321ecf7](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/321ecf746da1c6ec39f5a13a3742982814d222a0))
+* **deps:** update dependency gradle to v8.10 ([f5fa813](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/f5fa81371d1e13523e114d97d5d02ff51156fe76))
+* **deps:** update dependency gradle to v8.10.1 ([2bd7707](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/2bd7707578a5dd54f945fd4ecfb477ae280d4fef))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.100 ([585f2c1](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/585f2c14de031ba41ad1b69c8678c69a4f380ff3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.101 ([aebad7b](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/aebad7beb315c6996b6f96082808616a2494f356))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.102 ([f7d55b8](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/f7d55b87bed590f5b9db862d485a755855e47041))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.103 ([033edb1](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/033edb14cbb20caeae27390c14a15c42c0075129))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.104 ([3baf8d3](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/3baf8d3fcd2d33a37af20c65bed8c593c9469221))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.105 ([2fe9b80](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/2fe9b80074ece8e876366efd97c3cbdfea2d1a94))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.106 ([e18bd19](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/e18bd19c10fe6746ff89c18544e3fa7fe15ce490))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.92 ([8e66646](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/8e666460f4cf0e7b85c7be7cd2399b63fcf48b5d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.93 ([bc24d5a](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/bc24d5aeeebf75cdf6f06f8ad822750da1ef5ac6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.95 ([4386441](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/43864416663fd91d934f021b97e0f7ff3b9d50b4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.96 ([5acddc4](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5acddc434131f00b190858aee5e18a16f533ddb8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.97 ([80845d9](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/80845d9d4cc3bbfe56f97d993575d59a88e8e7d3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.98 ([5966a02](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5966a0227f7448a610c01352fb3b61d6e3398477))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.99 ([c7f004b](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/c7f004b9ed95ef6e9ac0dbcb87a44c42be05e4bc))
+* **deps:** update junit5 monorepo to v5.11.0 ([5309cbf](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5309cbf6cf8eedbb690cdd5cc3f4a7493de2bb0a))
+* **deps:** update node.js to 20.16 ([16f6003](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/16f6003636c550b6414b1d1f66955b759f25e12a))
+* **deps:** update node.js to 20.17 ([497a60b](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/497a60bed5cf1212e3a3d4d19ba3758755ccabf9))
+* **deps:** update plugin com.gradle.develocity to v3.17.6 ([7de39a4](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/7de39a432db3408c100dc837e95f09828904e5c1))
+* **deps:** update plugin com.gradle.develocity to v3.18 ([0dc150c](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/0dc150c8da427b8ec018627bfe80ab082806e1ba))
+* **deps:** update plugin com.gradle.develocity to v3.18.1 ([7a16fd2](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/7a16fd23bb0d6670d1f99e8508eea93d86a0677c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.10 ([ab7b17c](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/ab7b17cc0d5eb23db0eb97173c1b34a5558dbc9d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.12 ([5266a27](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/5266a27371a08d8834cdbc5ebd17be0b007d4d66))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.8 ([622d6a7](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/622d6a77acfc75dcbafe314c64d4a75e2a50de80))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.9 ([c685d3a](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/commit/c685d3a1af27b2c70ec5ea92fbd5012fca38cca7))
+
 ## [1.1.1](https://github.com/WebBased-WoDT/usecase-trafficlight-dt/compare/1.1.0...1.1.1) (2024-07-18)
 
 ### Dependency updates
